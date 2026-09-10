@@ -1,25 +1,26 @@
 {
-  "name": "express",
+  "name": "fragment-api-wrapper",
   "version": "1.0.0",
   "description": "",
-  "main": "app.ts",
+  "type": "commonjs",
+  "license": "ISC",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tsx watch src/app.ts",
     "build": "tsc",
-    "start": "node dist/app.ts"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "dependencies": {
-    "express": "^5.2.1"
+    "start": "node dist/app.js"
   },
   "devDependencies": {
     "@types/express": "^5.0.6",
-    "@types/node": "^26.5.0",
+    "@types/node": "^26.2.0",
     "tsx": "^4.23.13",
-    "typescript": "^7.0.2"
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "@ton/core": "^0.63.1",
+    "@ton/crypto": "^3.3.0",
+    "@ton/ton": "^16.3.0",
+    "axios": "^1.19.0",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1"
   }
 }

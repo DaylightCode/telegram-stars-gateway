@@ -1,5 +1,5 @@
 import dotenv from 'dotenv';
-import { signAndSendStarsTx } from '../ton/wallet';
+import { signAndSendStarsTx } from '@/ton/wallet';
 
 dotenv.config();
 
